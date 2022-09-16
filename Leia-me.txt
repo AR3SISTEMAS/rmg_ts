@@ -1,0 +1,12 @@
+Olá!
+
+Sobre a otimização de inclusão dos registros. Não terei muito tempo para implementar melhores rotinas, embora, tenha feito o uso de tread e consulta a API do Viacep eu implementaria em uma versão final os seguintes recursos.
+
+- Um FDMemTable para ser usado como "cache" já que a consulta mais demorada é a do via CEP. Desta forma usaria os registros já "baixados" para otimizar.
+- Criar arquivos com 1000 registros do tipo CSV e usar o recurso COPY do banco de dados. Esta sem dúvida seria a inclusão mais rápida.
+- Por fim, embora, tenha usado na leitura do arquivo com pessoas usaria BatchMove, pois, promoveria também um ganho de performance.
+
+A semana foi muito corrida, mas se necessário implemento em uma "segunda" versão.
+
+Muito obrigado
+
